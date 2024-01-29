@@ -14,16 +14,21 @@ final class IntegerNullBench
 
     public function benchEmpty(): void
     {
-        empty($this->value);
+        if (empty($this->value));
     }
 
     public function benchStrictEqual(): void
     {
-        $this->value === null;
+        if ($this->value === null);
     }
 
     public function benchTypecastBool(): void
     {
-        (bool) $this->value;
+        if ((bool) $this->value);
+    }
+
+    public function benchRaw(): void
+    {
+        if ($this->value);
     }
 }
