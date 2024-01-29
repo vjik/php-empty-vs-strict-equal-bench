@@ -21,4 +21,9 @@ final class IntegerNonEmptyBench
     {
         $this->value === null;
     }
+
+    public function benchTypecastBool(): void
+    {
+        (bool) $this->value;
+    }
 }

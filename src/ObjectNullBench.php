@@ -23,4 +23,9 @@ final class ObjectNullBench
     {
         $this->value === null;
     }
+
+    public function benchTypecastBool(): void
+    {
+        (bool) $this->value;
+    }
 }

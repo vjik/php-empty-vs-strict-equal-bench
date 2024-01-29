@@ -33,4 +33,9 @@ final class ObjectNonEmptyBench
     {
         $this->value === null;
     }
+
+    public function benchTypecastBool(): void
+    {
+        (bool) $this->value;
+    }
 }
