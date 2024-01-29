@@ -21,4 +21,9 @@ final class ArrayNonEmptyBench
     {
         $this->value === [];
     }
+
+    public function benchTypecastBool(): void
+    {
+        (bool) $this->value;
+    }
 }

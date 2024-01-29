@@ -21,4 +21,9 @@ final class StringEmptyBench
     {
         $this->value === '';
     }
+
+    public function benchTypecastBool(): void
+    {
+        (bool) $this->value;
+    }
 }
